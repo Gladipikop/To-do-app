@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://dlab0vpx8105y"]
+
+[ext_resource type="Texture2D" uid="uid://bip13a8g48g01" path="res://icon.svg" id="1_ig7tw"]
+
+[node name="Main" type="Node" unique_id=2104542922]
+
+[node name="MainContainer" type="Control" parent="." unique_id=1210834885]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 400.0
+offset_bottom = 800.0
+
+[node name="BG" type="Panel" parent="MainContainer" unique_id=1518671393]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BottomBar" type="Panel" parent="MainContainer/BG" unique_id=2081299779]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="BottomHContainer" type="HBoxContainer" parent="MainContainer/BG/BottomBar" unique_id=1100144873]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="Button" type="Button" parent="MainContainer/BG/BottomBar/BottomHContainer" unique_id=1330568959]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("1_ig7tw")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button2" type="Button" parent="MainContainer/BG/BottomBar/BottomHContainer" unique_id=39041446]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("1_ig7tw")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button3" type="Button" parent="MainContainer/BG/BottomBar/BottomHContainer" unique_id=748330108]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("1_ig7tw")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button4" type="Button" parent="MainContainer/BG/BottomBar/BottomHContainer" unique_id=424729226]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("1_ig7tw")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="TopBar" type="Panel" parent="MainContainer/BG" unique_id=1341417236]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 60.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/BG/TopBar" unique_id=785960437]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -263.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Icon" type="TextureRect" parent="MainContainer/BG/TopBar/HBoxContainer" unique_id=1739679516]
+layout_mode = 2
+texture = ExtResource("1_ig7tw")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="MainContainer/BG/TopBar/HBoxContainer" unique_id=1820756891]
+layout_mode = 2
+text = "Jaakko"
